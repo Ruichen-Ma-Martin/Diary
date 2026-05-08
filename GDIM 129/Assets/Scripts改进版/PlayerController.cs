@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour {
+public class PlayerController : Singleton<PlayerController> {
     [SerializeField] private bool _moveSmooth = true;
 
     private Vector2 _moveDirection;

@@ -132,6 +132,7 @@
 -define:ENABLE_TERRAIN
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
+-define:ENABLE_INPUT_SYSTEM
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
 -define:TEXTCORE_TEXT_ENGINE_1_5_OR_NEWER
@@ -421,6 +422,8 @@
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.2D.Tooling.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.Burst.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.Burst.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.Cinemachine.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.Cinemachine.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.Collections.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.Collections.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.InputSystem.ForUI.ref.dll"
@@ -450,7 +453,10 @@
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.RenderPipelines.Universal.Shaders.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.Rider.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.Searcher.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.Settings.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.ShaderGraph.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.Splines.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.Splines.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.TextMeshPro.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.TextMeshPro.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.Timeline.Editor.ref.dll"
@@ -474,6 +480,16 @@
 "Assets/script/cameraControl.cs"
 "Assets/script/gameController.cs"
 "Assets/script/player control.cs"
+"Assets/Scripts改进版/CameraTargetController.cs"
+"Assets/Scripts改进版/CollectableGameItem.cs"
+"Assets/Scripts改进版/FloatUI.cs"
+"Assets/Scripts改进版/GameItem.cs"
+"Assets/Scripts改进版/IInteractable.cs"
+"Assets/Scripts改进版/InspectableGameItem.cs"
+"Assets/Scripts改进版/InteractableGameItem.cs"
+"Assets/Scripts改进版/PlayerController.cs"
+"Assets/Scripts改进版/Singleton.cs"
+"Assets/Scripts改进版/UIManager.cs"
 -langversion:9.0
 /deterministic
 /optimize-

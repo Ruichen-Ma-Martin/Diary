@@ -7,6 +7,7 @@ public class DiaryControl : Singleton<DiaryControl>
     public List<GameObject> _diaryPagePrefabs = new List<GameObject>();
     public List<GameObject> _SpawnedDiaryPages = new List<GameObject>();
     public bool _DiaryOpen = false;
+    public GameObject ParentObject;
 
     private void Awake()
     {
@@ -29,7 +30,7 @@ public class DiaryControl : Singleton<DiaryControl>
     void AddDiaryPage()
     {
         int index = DaytimeControl.Instance._Daytime - 1;
-        GameObject newPage = Instantiate(_diaryPagePrefabs[index]);
+        GameObject newPage = Instantiate(_diaryPagePrefabs[index], ParentObject.transform);
         _SpawnedDiaryPages.Add(newPage);
 
     }

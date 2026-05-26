@@ -11,4 +11,13 @@ public class DaytimeControl: Singleton<DaytimeControl>
         Debug.Log("Daytime increased. Current daytime: " + _Daytime);
         OnDaytimeChanged?.Invoke();
     }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            AddDay();
+        }
+    }
 }
+

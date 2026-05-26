@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2560
     height: 1349.3334
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Inspector
   m_RootView: {fileID: 10}
   m_MinSize: {x: 875, y: 394}
   m_MaxSize: {x: 10000, y: 10000}
@@ -227,8 +227,8 @@ MonoBehaviour:
     y: 0
     width: 801.3333
     height: 860
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 226}
+  m_MaxSize: {x: 4002, y: 4026}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -651,14 +651,12 @@ MonoBehaviour:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs:
-      - m_Data: 53366
+      - m_Data: -3584
       m_LastClickedID:
-        m_Data: 53366
+        m_Data: -3584
       m_ExpandedIDs:
-      - m_Data: -10252
-      - m_Data: 53302
-      - m_Data: 53312
-      - m_Data: 53316
+      - m_Data: -1316
+      - m_Data: 50562
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -784,7 +782,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/art
+    - Assets/script
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -794,7 +792,7 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/art
+  - Assets/script
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\GDIM\GDIM 129 horror game\Diary\GDIM 129
   m_LockTracker:
@@ -803,17 +801,17 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs:
-    - m_Data: 53552
+    - m_Data: 50944
     m_LastClickedID:
-      m_Data: 53552
+      m_Data: 50944
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 53454
-    - m_Data: 53456
-    - m_Data: 53458
-    - m_Data: 53460
-    - m_Data: 53462
-    - m_Data: 54870
+    - m_Data: 50640
+    - m_Data: 50642
+    - m_Data: 50644
+    - m_Data: 50646
+    - m_Data: 50648
+    - m_Data: 50650
     - m_Data: 1000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -847,11 +845,12 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 53454
-    - m_Data: 53456
-    - m_Data: 53458
-    - m_Data: 53460
-    - m_Data: 53462
+    - m_Data: 50640
+    - m_Data: 50642
+    - m_Data: 50644
+    - m_Data: 50646
+    - m_Data: 50648
+    - m_Data: 50650
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -879,8 +878,8 @@ MonoBehaviour:
       m_ResourceFile: 
   m_ListAreaState:
     m_SelectedInstanceIDs:
-    - m_Data: 53366
-    m_LastClickedInstanceID: 53366
+    - m_Data: -3584
+    m_LastClickedInstanceID: -3584
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs:
     - m_Data: 54854
@@ -1626,9 +1625,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: -0.25822452, y: 2.6939187, z: -30.567713}
+    m_Target: {x: 370.24738, y: 704.0626, z: -12.79111}
     speed: 2
-    m_Value: {x: -0.25822452, y: 2.6939187, z: -30.567713}
+    m_Value: {x: 370.24738, y: 704.0626, z: -12.79111}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1678,9 +1677,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 10.285476
+    m_Target: 1349.8224
     speed: 2
-    m_Value: 10.285476
+    m_Value: 1349.8224
   m_Ortho:
     m_Target: 1
     speed: 2

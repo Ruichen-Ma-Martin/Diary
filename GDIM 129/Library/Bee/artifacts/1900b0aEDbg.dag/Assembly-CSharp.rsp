@@ -481,6 +481,7 @@
 "Assets/script/DaytimeControl.cs"
 "Assets/script/DiaryControl.cs"
 "Assets/script/gameController.cs"
+"Assets/script/InteractiveObject.cs"
 "Assets/script/player control.cs"
 "Assets/Scripts改进版/CameraTargetController.cs"
 "Assets/Scripts改进版/CollectableGameItem.cs"

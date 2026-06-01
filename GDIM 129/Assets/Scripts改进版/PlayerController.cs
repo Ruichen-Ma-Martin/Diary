@@ -8,6 +8,7 @@ public class PlayerController : Singleton<PlayerController> {
     public Rigidbody2D rb;
     [SerializeField] private SpriteRenderer _spriteRenderer;
     [SerializeField] private GameObject _diary;
+    private bool _isPlayerCanMove = true;
 
 
     private void Awake() {
@@ -21,6 +22,7 @@ public class PlayerController : Singleton<PlayerController> {
 
     void MoveControll()
     {
+        if (!_isPlayerCanMove) return;
         _moveDirection.x = _moveSmooth ? Input.GetAxis("Horizontal") : Input.GetAxisRaw("Horizontal");
 
             rb.linearVelocityX = _moveDirection.x * _moveSpeed;

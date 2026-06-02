@@ -15,7 +15,15 @@ public class InteractiveObject : Singleton<InteractiveObject>
 
     void Update()
     {
+        if(DaytimeControl.Instance._Daytime == _requiredDay)
+        {
             checkinteractiveStart();
+        }
+        else
+            {
+                _interactiveUI.SetActive(false);
+        }
+
     }
 
     void checkinteractiveStart()
@@ -23,13 +31,14 @@ public class InteractiveObject : Singleton<InteractiveObject>
         if (Vector2.Distance(transform.position, PlayerController.Instance.transform.position) < 1.5f)
         {
             _interactiveUI.SetActive(true);
-            if (Input.GetKeyDown(KeyCode.E) && _isHUDOpen == false)
+            if (Input.GetKeyDown(KeyCode.E) && _isHUDOpen == false )
             {
                 OpenInteractiveHUD();
             }
-            else if (Input.GetKeyDown(KeyCode.E) && _isHUDOpen == true)
+            else if (Input.GetKeyDown(KeyCode.E) && _isHUDOpen == true&& DialogueLog.Instance._isDialogueActive == false)
             {
                 CloseInteractiveHUD();
+                DaytimeControl.Instance.NextAction();
             }
             
         }

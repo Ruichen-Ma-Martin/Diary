@@ -7,7 +7,7 @@ public class DialogueLog : Singleton<DialogueLog>
     private Dialogue_SO _currentDialogue;
     private int _currentLine;
     public TMP_Text _dialogueText;
-    private bool _isDialogueActive;
+    public bool _isDialogueActive;
 
     void Start()
     {

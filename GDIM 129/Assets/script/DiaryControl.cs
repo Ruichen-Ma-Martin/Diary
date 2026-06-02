@@ -13,8 +13,8 @@ public class DiaryControl : Singleton<DiaryControl>
 
     private void Awake()
     {
-        DaytimeControl.Instance.OnDaytimeChanged += AddDiaryPage;
-       
+        DaytimeControl.OnDaytimeChanged += AddDiaryPage;
+
     }
 
 

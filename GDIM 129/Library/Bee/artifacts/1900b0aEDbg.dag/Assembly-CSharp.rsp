@@ -486,6 +486,7 @@
 "Assets/script/InteractiveButton.cs"
 "Assets/script/InteractiveObject.cs"
 "Assets/script/player control.cs"
+"Assets/script/StartGame.cs"
 "Assets/Scripts改进版/CameraTargetController.cs"
 "Assets/Scripts改进版/CollectableGameItem.cs"
 "Assets/Scripts改进版/FloatUI.cs"

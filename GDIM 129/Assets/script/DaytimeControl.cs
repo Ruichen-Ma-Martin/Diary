@@ -21,6 +21,7 @@ public class DaytimeControl : Singleton<DaytimeControl>
     };
     [SerializeField] private TMP_Text _timeText;
     [SerializeField] private TMP_Text _DayText;
+   
 
     public void AddDay()
     {

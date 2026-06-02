@@ -4,5 +4,7 @@ using UnityEngine;
 public class Dialogue_SO : ScriptableObject
 {
    public string[] _lines;
-   //public Dialogue_SO[] _nextDialogue;
+    //public Dialogue_SO[] _nextDialogue;
+    public int _SanNumber;
+
 }

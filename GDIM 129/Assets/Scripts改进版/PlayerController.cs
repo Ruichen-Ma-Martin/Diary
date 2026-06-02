@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class PlayerController : Singleton<PlayerController> {
@@ -9,16 +10,22 @@ public class PlayerController : Singleton<PlayerController> {
     [SerializeField] private SpriteRenderer _spriteRenderer;
    
     public bool _isPlayerCanMove = true;
+    private int _San;
+    [SerializeField] private TMP_Text _SanText;
 
 
     private void Awake() {
         rb = GetComponent<Rigidbody2D>();
-        
+        _San = 100;
+        DialogueLog.OnDialogueEnd += UpdateSanText;
+
     }
 
     private void Update() {
         MoveControll();
         OpenDiary();
+
+         _SanText.text = "San: " + _San;
     }
 
     void MoveControll()
@@ -43,5 +50,10 @@ public class PlayerController : Singleton<PlayerController> {
         {
             DiaryControl.Instance.OpeanDiary();
         }
+    }
+    void UpdateSanText()
+    {
+        _San += DialogueLog.Instance._currentSanValue;
+       
     }
 }

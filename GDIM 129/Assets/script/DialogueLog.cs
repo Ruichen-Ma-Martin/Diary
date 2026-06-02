@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 
@@ -8,6 +9,9 @@ public class DialogueLog : Singleton<DialogueLog>
     private int _currentLine;
     public TMP_Text _dialogueText;
     public bool _isDialogueActive;
+    public int _currentSanValue;
+    public static event Action OnDialogueEnd;
+
 
     void Start()
     {
@@ -48,6 +52,8 @@ public class DialogueLog : Singleton<DialogueLog>
     }
     void DialogueEnd()
     {
+        _currentSanValue = _currentDialogue._SanNumber;
+        OnDialogueEnd?.Invoke();
         _isDialogueActive = false;
         _dialogueText.text = "";
         gameObject.SetActive(false);

@@ -1,4 +1,5 @@
 using System.Runtime.CompilerServices;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,6 +8,8 @@ public class InteractiveButton : MonoBehaviour
     [SerializeField] private int ButtonID;
     private Button _button;
     public GameObject _DialogueHUD;
+    
+
 
     private void Awake()
     {
@@ -19,13 +22,10 @@ public class InteractiveButton : MonoBehaviour
     }
     private void OnButtonClick()
     {
-       
-        
-        
         Debug.Log("Button Clicked!");
         DialogueLog.Instance._StartDialogues = DaytimeControl.Instance._dialoguelist[ButtonID];
         _DialogueHUD.SetActive(true);
-
+        
 
     }
 }

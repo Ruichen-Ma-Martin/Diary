@@ -19,13 +19,13 @@ public class DialogueLog : Singleton<DialogueLog>
     {
        _currentDialogue = _StartDialogues;
         _currentLine = 0;
-       
+       StartDialogue();
     }
 
 
      void Update()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButtonDown(0))
         {
             StartDialogue();
         }

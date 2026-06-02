@@ -19,6 +19,9 @@ public class InteractiveButton : MonoBehaviour
     }
     private void OnButtonClick()
     {
+       
+        
+        
         Debug.Log("Button Clicked!");
         DialogueLog.Instance._StartDialogues = DaytimeControl.Instance._dialoguelist[ButtonID];
         _DialogueHUD.SetActive(true);

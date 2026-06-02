@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 57163079}
   - component: {fileID: 57163078}
   - component: {fileID: 57163077}
+  - component: {fileID: 57163080}
   m_Layer: 5
   m_Name: DialogueHUD
   m_TagString: Untagged
@@ -193,8 +194,22 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1940, y: 200}
+  m_SizeDelta: {x: 1940, y: 1000}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &57163080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 57163076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68940f8ef4e80214ab85893461554d65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueLog
+  _StartDialogues: {fileID: 0}
+  _dialogueText: {fileID: 575011291}
 --- !u!1 &71836706
 GameObject:
   m_ObjectHideFlags: 0
@@ -1882,7 +1897,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3039,7 +3054,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1781548818
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3841,7 +3856,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &2102186229
 RectTransform:

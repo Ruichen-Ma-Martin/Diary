@@ -4,6 +4,7 @@ public class DaytimeControl: Singleton<DaytimeControl>
 {
     public int _Daytime = 0; 
     public event System.Action OnDaytimeChanged;
+    public Dialogue_SO[]  _dialoguelist;
 
     public void AddDay()
     {

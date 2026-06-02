@@ -7,12 +7,13 @@ public class PlayerController : Singleton<PlayerController> {
     [SerializeField] private float _moveSpeed = 3f;
     public Rigidbody2D rb;
     [SerializeField] private SpriteRenderer _spriteRenderer;
-    [SerializeField] private GameObject _diary;
-    private bool _isPlayerCanMove = true;
+   
+    public bool _isPlayerCanMove = true;
 
 
     private void Awake() {
         rb = GetComponent<Rigidbody2D>();
+        
     }
 
     private void Update() {
@@ -40,16 +41,7 @@ public class PlayerController : Singleton<PlayerController> {
     {
         if (Input.GetKeyDown(KeyCode.Tab))
         {
-            if (DiaryControl.Instance._DiaryOpen == false)
-            {
-                _diary.SetActive(true);
-                
-            }
-            else
-            {
-                _diary.SetActive(false);
-                
-            }
+            DiaryControl.Instance.OpeanDiary();
         }
     }
 }

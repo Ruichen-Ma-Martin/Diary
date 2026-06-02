@@ -7,27 +7,33 @@ public class DiaryControl : Singleton<DiaryControl>
 {
     public List<GameObject> _diaryPagePrefabs = new List<GameObject>();
     public List<GameObject> _SpawnedDiaryPages = new List<GameObject>();
-    public bool _DiaryOpen = false;
+    private bool _DiaryOpen ;
     public GameObject ParentObject;
     private int _currentPageIndex = 0;
 
     private void Awake()
     {
         DaytimeControl.Instance.OnDaytimeChanged += AddDiaryPage;
+       
     }
 
-    private void OnEnable()
+
+
+    
+
+    public void OpeanDiary()
     {
-        if (!_DiaryOpen)
+        if(_DiaryOpen == false)
         {
             _DiaryOpen = true;
-            Debug.Log("Diary opened.");
+            gameObject.SetActive(true);
+
         }
-    }
-    private void OnDisable()
-    {
-        _DiaryOpen = false;
-        Debug.Log("Diary closed.");
+        else
+        {
+            _DiaryOpen = false;
+            gameObject.SetActive(false);
+        }
     }
     void AddDiaryPage()
     {
@@ -40,7 +46,7 @@ public class DiaryControl : Singleton<DiaryControl>
 
     public void NextPage()
     {
-        if (_SpawnedDiaryPages.Count == 0|| _SpawnedDiaryPages == null)return;
+        if (_SpawnedDiaryPages.Count == 0 || _SpawnedDiaryPages == null) return;
         _SpawnedDiaryPages[_currentPageIndex].SetActive(false);
         _currentPageIndex = (_currentPageIndex + 1) % _SpawnedDiaryPages.Count;
         _SpawnedDiaryPages[_currentPageIndex].SetActive(true);

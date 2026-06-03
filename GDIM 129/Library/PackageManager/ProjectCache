@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639146666769817329
-    m_Hash: 223137742
+      ticks: 639160436200271478
+    m_Hash: 1752370836
   m_LockFileStatus:
     m_FilePath: C:/GDIM/GDIM 129 horror game/Diary/GDIM 129/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639146666769817329
-    m_Hash: 4238429426
+      ticks: 639160436984657702
+    m_Hash: 3799178735
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -1742,12 +1742,12 @@ m_ResolvedPackages:
       scopePatternExpression: 
       message: 
       readMoreLink: 
-- packageId: com.unity.collab-proxy@2.11.3
+- packageId: com.unity.collab-proxy@2.11.4
   testable: 0
   isDirectDependency: 1
-  version: 2.11.3
+  version: 2.11.4
   source: 1
-  resolvedPath: C:\GDIM\GDIM 129 horror game\Diary\GDIM 129\Library\PackageCache\com.unity.collab-proxy@e566cd3e7623
+  resolvedPath: C:\GDIM\GDIM 129 horror game\Diary\GDIM 129\Library\PackageCache\com.unity.collab-proxy@a5329f833fa8
   assetPath: Packages/com.unity.collab-proxy
   name: com.unity.collab-proxy
   displayName: Unity Version Control
@@ -1891,13 +1891,13 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 639047683637960000
+  datePublishedTicks: 639076172810380000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.collab-proxy@2.11/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.cloud.collaborate.git
-    revision: 23b6a337b59c8ad04d7b78f38448ad0addcb7954
+    revision: 164a710206077e1184a134f18801dae560fdf28a
     path: 
   unityLifecycle:
     version: 2.11.3
@@ -1911,9 +1911,8 @@ m_ResolvedPackages:
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Fixed\n\n- Fixed accessing Editor internals directly
-    on versions below Unity 6.3.\n- Fixed a compilation error caused by an invalid
-    duplicated GUID in WaitForPendingOperations.cs.meta in 2.11.2."}'
+  upmReserved: '{"changelog":"### Fixed\n\n- Fixed deprecated instanceID API usages
+    for Unity 6.5."}'
   signature:
     status: 1
     reason: Signature is ok
@@ -1927,7 +1926,7 @@ m_ResolvedPackages:
     errorCode: 
   assetStore:
     productId: 
-  fingerprint: e566cd3e762373591f6828e86f2018eed8021356
+  fingerprint: a5329f833fa805a96ac8b0a1eb09dc64c076b032
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 2.11.3
@@ -2212,12 +2211,12 @@ m_ResolvedPackages:
       scopePatternExpression: 
       message: 
       readMoreLink: 
-- packageId: com.unity.inputsystem@1.18.0
+- packageId: com.unity.inputsystem@1.19.0
   testable: 0
   isDirectDependency: 1
-  version: 1.18.0
+  version: 1.19.0
   source: 1
-  resolvedPath: C:\GDIM\GDIM 129 horror game\Diary\GDIM 129\Library\PackageCache\com.unity.inputsystem@57d0e36f6123
+  resolvedPath: C:\GDIM\GDIM 129 horror game\Diary\GDIM 129\Library\PackageCache\com.unity.inputsystem@21a28c3a6c83
   assetPath: Packages/com.unity.inputsystem
   name: com.unity.inputsystem
   displayName: Input System
@@ -2339,13 +2338,13 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 639039807602510000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.inputsystem@1.18/manual/index.html
+  datePublishedTicks: 639075089033030000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.inputsystem@1.19/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.com/Unity-Technologies/InputSystem.git
-    revision: c0d61169c3ccce912ce6a8dec13a30e6e35fdeb8
+    revision: ca8d898356596a91bda6505e506cc1a4bb3a9fa6
     path: 
   unityLifecycle:
     version: 1.18.0
@@ -2359,16 +2358,20 @@ m_ResolvedPackages:
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Changed\n\n- Updated documentation to reflect that
-    the OnMouse MonoBehaviour events are now supported in Unity 6.4 and above.\n-
-    Updated the supported devices documentation to clarify that touchscreens are
-    supported on Linux.\n- Updated documentation to reflect PS5 controller support
-    on Linux.\n\n### Fixed\n\n- Fixed add buttons use add icon in input actions window
-    (ISX-2340)\n- Fixed warnings being generated on Unity 6.4 and 6.5. (ISX-2395).\n-
-    Fixed extra empty lines being displayed in the control binding list when mouse
-    buttons are pressed [ISXB-1677](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-1677)\n-
-    Fixed InputActionReference not being set when attempting to set it on a Prefab
-    or ScriptableObject [ISXB-1787](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-1787)"}'
+  upmReserved: '{"changelog":"### Changed\n\n- Reverted the deprecation of the USE_IMGUI_EDITOR_FOR_ASSETS
+    feature option (ISX-2397).\n- Updated `m_ActionAssetInstanceID` in PlayerInputEditor.cs
+    to use `EntityId` instead of `InstanceID`.\n- Consecutive wildcard characters
+    (''*'') used in input control-paths are now collapsed into a single wildcard
+    when multiple consecutive wildcard characters are present.\n\n### Fixed\n\n-
+    Fixed the `Auto-Save` toggle button with some extra pixels to align the text
+    in the window better.\n- Align title font size with toolbar style in `Input Action`
+    window.\n- Updated Action Properties headers to use colors consistent with GameObject
+    component headers.\n- Fixed misaligned Virtual Cursor when changing resolution
+    [ISXB-1119](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-1119)\n-
+    Fixed an issue where `IndexOutOfRangeException` was thrown from `InputManagerStateMonitors.AddStateChangeMonitor`
+    when attempting to enable an action map from within an `InputAction.cancel` callback
+    when using control schemes. (ISXB-1767).\n\n### Added\n\n- Added `keywords` for
+    InputSystem project settings window."}'
   signature:
     status: 1
     reason: Signature is ok
@@ -2382,7 +2385,7 @@ m_ResolvedPackages:
     errorCode: 
   assetStore:
     productId: 
-  fingerprint: 57d0e36f61231bc5a2579f37d81bf6fa02f40adc
+  fingerprint: 21a28c3a6c83903a93cf15d7d0714b773c50fdf6
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.18.0
@@ -2737,12 +2740,12 @@ m_ResolvedPackages:
       scopePatternExpression: 
       message: 
       readMoreLink: 
-- packageId: com.unity.timeline@1.8.10
+- packageId: com.unity.timeline@1.8.11
   testable: 0
   isDirectDependency: 1
-  version: 1.8.10
+  version: 1.8.11
   source: 1
-  resolvedPath: C:\GDIM\GDIM 129 horror game\Diary\GDIM 129\Library\PackageCache\com.unity.timeline@7f8b2fb101b6
+  resolvedPath: C:\GDIM\GDIM 129 horror game\Diary\GDIM 129\Library\PackageCache\com.unity.timeline@bfd27f8016ff
   assetPath: Packages/com.unity.timeline
   name: com.unity.timeline
   displayName: Timeline
@@ -2894,13 +2897,13 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 639010941520280000
+  datePublishedTicks: 639076501551120000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.timeline@1.8/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.timeline.git
-    revision: a83681b24217526a0f539d70ddca4abf270a5ada
+    revision: cdac322c9875133dd1579842f73adb7f463c6d0b
     path: 
   unityLifecycle:
     version: 1.8.10
@@ -2914,10 +2917,9 @@ m_ResolvedPackages:
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Fixed\n\n- Fix compilation error for version 2023.2
-    of the editor (TB-352)\n- Fixed an issue where it was possible for 2 clips to
-    have a micro overlap that was not detected as a blend, resulting in both clips
-    playing at the same time with a weight of one. (TB-345)"}'
+  upmReserved: '{"changelog":"### Fixed\n\n- Fix performance regression in Custom
+    Clip PlayableAsset Inspector where animated parameters caused Timeline Window
+    to refresh when scrubbing or playing the Timeline (UUM-133569)"}'
   signature:
     status: 1
     reason: Signature is ok
@@ -2931,7 +2933,7 @@ m_ResolvedPackages:
     errorCode: 
   assetStore:
     productId: 
-  fingerprint: 7f8b2fb101b6053cc7472330401e94ff0c17b204
+  fingerprint: bfd27f8016ffda6a22579ffc468432a96b2cc5b6
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.8.10
@@ -3049,12 +3051,12 @@ m_ResolvedPackages:
       scopePatternExpression: 
       message: 
       readMoreLink: 
-- packageId: com.unity.visualscripting@1.9.9
+- packageId: com.unity.visualscripting@1.9.11
   testable: 0
   isDirectDependency: 1
-  version: 1.9.9
+  version: 1.9.11
   source: 1
-  resolvedPath: C:\GDIM\GDIM 129 horror game\Diary\GDIM 129\Library\PackageCache\com.unity.visualscripting@191c0d7e3b69
+  resolvedPath: C:\GDIM\GDIM 129 horror game\Diary\GDIM 129\Library\PackageCache\com.unity.visualscripting@8bed5ad90189
   assetPath: Packages/com.unity.visualscripting
   name: com.unity.visualscripting
   displayName: Visual Scripting
@@ -3063,7 +3065,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: tool
+  type: 
   description: 'Visual scripting is a workflow that uses visual, node-based graphs
     to design behaviors rather than write lines of C# script.
 
@@ -3144,13 +3146,13 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638965671307960000
-  documentationUrl: 
+  datePublishedTicks: 639089344800930000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.visualscripting@1.9/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.visualscripting.git
-    revision: 2bb93a09becf00b2343d1c670afbf3836f170f55
+    revision: e45076a785db38aa81ea919d98739fa8bcb6cdbc
     path: 
   unityLifecycle:
     version: 1.9.9
@@ -3164,9 +3166,9 @@ m_ResolvedPackages:
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Fixed\n- Fixed broken links to example codes in
-    API documentation.\n\n### Changed\n- Adds alt texts to images in documentation
-    to increase accessibility for screen readers."}'
+  upmReserved: '{"changelog":"### Changed\n- Replaced remaining internal use of InstanceIDs
+    with the new EntityId (Unity 6.4+).\n- Replaced internal calls to the deprecated
+    `FindObjectsByType<T>(FindObjectsSortMode)` method (Unity 6.4+)."}'
   signature:
     status: 1
     reason: Signature is ok
@@ -3180,7 +3182,7 @@ m_ResolvedPackages:
     errorCode: 
   assetStore:
     productId: 
-  fingerprint: 191c0d7e3b69bc0df1b6fed3a997c4c3a765ef6a
+  fingerprint: 8bed5ad901895f10b7d0e524c4738cab14cef692
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.9.9
@@ -7559,13 +7561,15 @@ m_ResolvedPackages:
     - 2.6.4
     - 2.6.5
     - 2.6.6
+    - 2.6.7
     compatible:
     - 2.6.2
     - 2.6.3
     - 2.6.4
     - 2.6.5
     - 2.6.6
-    recommended: 2.6.6
+    - 2.6.7
+    recommended: 2.6.7
     deprecated: []
   dependencies:
   - name: com.unity.burst

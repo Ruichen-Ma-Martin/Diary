@@ -1,0 +1,13 @@
+using UnityEngine;
+
+public static class GlobalData
+{
+    public static int _Day =1 ;
+    public static string[] _SceneList =
+    {
+        "Day1",
+        "Day2",
+        "Day3",
+        "Day4",
+    };
+}

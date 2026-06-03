@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : Singleton<PlayerController> {
     [SerializeField] private bool _moveSmooth = true;
@@ -24,8 +25,12 @@ public class PlayerController : Singleton<PlayerController> {
     private void Update() {
         MoveControll();
         OpenDiary();
+        if (_San <= 0)
+        {
+            SceneManager.LoadScene("DeadMain");
+        }
 
-         _SanText.text = "San: " + _San;
+        _SanText.text = "San: " + _San;
     }
 
     void MoveControll()

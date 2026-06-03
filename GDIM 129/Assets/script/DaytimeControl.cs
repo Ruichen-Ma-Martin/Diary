@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class DaytimeControl : Singleton<DaytimeControl>
 {
-    public int _Daytime = 1;
+    //public int _Daytime = 1;
     public static event Action OnDaytimeChanged;
     public int _ActionNumber = 0;
     public Dialogue_SO[] _dialoguelist;
@@ -27,16 +27,20 @@ public class DaytimeControl : Singleton<DaytimeControl>
 
     public void AddDay()
     {
-        _Daytime++;
-        Debug.Log("Daytime increased. Current daytime: " + _Daytime);
+        GlobalData._Day += 1;
+        //Debug.Log("Daytime increased. Current daytime: " + GlobalData._Day);
         OnDaytimeChanged?.Invoke();
     }
     private void Start()
-    {   
-        DialogueLog.Instance._StartDialogues = _GameStartDialogue;
-        _dialogueHUD.SetActive(true);
-        AddDay();
-        _DayText.text = "Day " + _Daytime;
+    {
+        if (GlobalData._Day == 1)
+        {
+            DialogueLog.Instance._StartDialogues = _GameStartDialogue;
+            _dialogueHUD.SetActive(true);
+        }
+       
+        
+        _DayText.text = "Day " + GlobalData._Day;
         _timeText.text = _timeList[_ActionNumber];
         
     }
@@ -50,10 +54,10 @@ public class DaytimeControl : Singleton<DaytimeControl>
         if (_ActionNumber >= 4)
         { 
             _ActionNumber = 0;
-           DialogueLog.Instance._StartDialogues = _Daydialoguelist[_Daytime - 1];
+           DialogueLog.Instance._StartDialogues = _Daydialoguelist[GlobalData._Day - 1];
           _dialogueHUD.SetActive(true);
            AddDay();
-          _DayText.text = "Day " + _Daytime;
+          _DayText.text = "Day " + GlobalData._Day;
           _timeText.text = _timeList[_ActionNumber];
           if(PlayerController.Instance._San <= 50)
           {

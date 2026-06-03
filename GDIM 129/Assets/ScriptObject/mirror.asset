@@ -19,4 +19,6 @@ MonoBehaviour:
     match your expression
   - 'the overhead light flickers irregularly, and faint female whispers mix into
     the background. '
+  _playerReplyOptions: []
+  _npcReplies: []
   _SanNumber: -25

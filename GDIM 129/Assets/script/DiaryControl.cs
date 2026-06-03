@@ -5,7 +5,7 @@ using Unity.VisualScripting;
 
 public class DiaryControl : Singleton<DiaryControl>
 {
-    public List<GameObject> _diaryPagePrefabs = new List<GameObject>();
+    //public List<GameObject> _diaryPagePrefabs = new List<GameObject>();
     public List<GameObject> _SpawnedDiaryPages = new List<GameObject>();
     private bool _DiaryOpen ;
     public GameObject ParentObject;
@@ -13,7 +13,7 @@ public class DiaryControl : Singleton<DiaryControl>
 
     private void Awake()
     {
-        DaytimeControl.OnDaytimeChanged += AddDiaryPage;
+        //DaytimeControl.OnDaytimeChanged += AddDiaryPage;
 
     }
 
@@ -35,15 +35,7 @@ public class DiaryControl : Singleton<DiaryControl>
             gameObject.SetActive(false);
         }
     }
-    void AddDiaryPage()
-    {
-        Debug.Log("Adding diary page for daytime: " + DaytimeControl.Instance._Daytime);
-        int index = DaytimeControl.Instance._Daytime - 1;
-        GameObject newPage = Instantiate(_diaryPagePrefabs[index], ParentObject.transform);
-        _SpawnedDiaryPages.Add(newPage);
-        newPage.SetActive(false);
-
-    }
+    
 
     public void NextPage()
     {

@@ -10,7 +10,7 @@ public class PlayerController : Singleton<PlayerController> {
     [SerializeField] private SpriteRenderer _spriteRenderer;
    
     public bool _isPlayerCanMove = true;
-    private int _San;
+    public int _San;
     [SerializeField] private TMP_Text _SanText;
 
 
@@ -36,11 +36,11 @@ public class PlayerController : Singleton<PlayerController> {
             rb.linearVelocityX = _moveDirection.x * _moveSpeed;
         if (_moveDirection.x < 0)
         {
-            _spriteRenderer.flipX = true;
+            _spriteRenderer.flipX = false;
         }
         else if (_moveDirection.x > 0)
         {
-            _spriteRenderer.flipX = false;
+            _spriteRenderer.flipX = true;
         }
     }
 

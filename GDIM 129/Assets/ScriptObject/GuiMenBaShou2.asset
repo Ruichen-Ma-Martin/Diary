@@ -12,4 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69456d03988ca4e88921b432c824af2b, type: 3}
   m_Name: GuiMenBaShou2
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue_SO
-  _lines: []
+  _lines:
+  - Clicking the wardrobe handle in zoomed view pries the door open by a thin crack
+  - 'from which a deathly pale hand suddenly stretches out then yanks back into the
+    closet alongside eerie ambient noises.  '
+  _SanNumber: -20

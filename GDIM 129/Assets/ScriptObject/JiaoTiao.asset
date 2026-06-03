@@ -12,4 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69456d03988ca4e88921b432c824af2b, type: 3}
   m_Name: JiaoTiao
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue_SO
-  _lines: []
+  _lines:
+  - Tapping the leftover adhesive tape on the wardrobe peels the tape away
+  - "uncovering handwritten words \"It\u2019s breathing inside\" beneath it. "
+  _SanNumber: 5

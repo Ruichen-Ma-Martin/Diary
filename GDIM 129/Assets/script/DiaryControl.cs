@@ -37,6 +37,7 @@ public class DiaryControl : Singleton<DiaryControl>
     }
     void AddDiaryPage()
     {
+        Debug.Log("Adding diary page for daytime: " + DaytimeControl.Instance._Daytime);
         int index = DaytimeControl.Instance._Daytime - 1;
         GameObject newPage = Instantiate(_diaryPagePrefabs[index], ParentObject.transform);
         _SpawnedDiaryPages.Add(newPage);

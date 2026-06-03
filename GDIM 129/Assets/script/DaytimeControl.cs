@@ -1,6 +1,7 @@
 using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DaytimeControl : Singleton<DaytimeControl>
 {
@@ -10,6 +11,7 @@ public class DaytimeControl : Singleton<DaytimeControl>
     public Dialogue_SO[] _dialoguelist;
     [SerializeField] private Dialogue_SO[] _Daydialoguelist;
     [SerializeField]private GameObject _dialogueHUD;
+    [SerializeField] private Dialogue_SO _GameStartDialogue;
     
     [SerializeField] private string[] _timeList =
     {
@@ -27,10 +29,12 @@ public class DaytimeControl : Singleton<DaytimeControl>
     {
         _Daytime++;
         Debug.Log("Daytime increased. Current daytime: " + _Daytime);
-         OnDaytimeChanged?.Invoke();
+        OnDaytimeChanged?.Invoke();
     }
     private void Start()
     {   
+        DialogueLog.Instance._StartDialogues = _GameStartDialogue;
+        _dialogueHUD.SetActive(true);
         AddDay();
         _DayText.text = "Day " + _Daytime;
         _timeText.text = _timeList[_ActionNumber];
@@ -51,6 +55,10 @@ public class DaytimeControl : Singleton<DaytimeControl>
            AddDay();
           _DayText.text = "Day " + _Daytime;
           _timeText.text = _timeList[_ActionNumber];
+          if(PlayerController.Instance._San <= 50)
+          {
+              SceneManager.LoadScene("DeadMain");
+          }
 
         }
         

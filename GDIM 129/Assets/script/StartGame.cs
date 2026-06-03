@@ -5,6 +5,6 @@ public class StartGame : MonoBehaviour
 {
     public void GameStart()
     {
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene(GlobalData._SceneList[GlobalData._Day - 1]);
     }
 }

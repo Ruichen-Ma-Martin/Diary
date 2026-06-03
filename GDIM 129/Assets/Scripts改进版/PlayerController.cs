@@ -11,13 +11,13 @@ public class PlayerController : Singleton<PlayerController> {
     [SerializeField] private SpriteRenderer _spriteRenderer;
    
     public bool _isPlayerCanMove = true;
-    public int _San;
+    //public int _San;
     [SerializeField] private TMP_Text _SanText;
 
 
     private void Awake() {
         rb = GetComponent<Rigidbody2D>();
-        _San = 100;
+        
         DialogueLog.OnDialogueEnd += UpdateSanText;
 
     }
@@ -25,12 +25,12 @@ public class PlayerController : Singleton<PlayerController> {
     private void Update() {
         MoveControll();
         OpenDiary();
-        if (_San <= 0)
+        if (GlobalData._SanValue <= 0)
         {
             SceneManager.LoadScene("DeadMain");
         }
 
-        _SanText.text = "San: " + _San;
+        _SanText.text = "San: " + GlobalData._SanValue;
     }
 
     void MoveControll()
@@ -58,7 +58,7 @@ public class PlayerController : Singleton<PlayerController> {
     }
     void UpdateSanText()
     {
-        _San += DialogueLog.Instance._currentSanValue;
+        GlobalData._SanValue += DialogueLog.Instance._currentSanValue;
        
     }
 }

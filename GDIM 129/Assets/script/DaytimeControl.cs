@@ -28,16 +28,15 @@ public class DaytimeControl : Singleton<DaytimeControl>
     public void AddDay()
     {
         GlobalData._Day += 1;
-        //Debug.Log("Daytime increased. Current daytime: " + GlobalData._Day);
+        
         OnDaytimeChanged?.Invoke();
     }
     private void Start()
     {
-        if (GlobalData._Day == 1)
-        {
-            DialogueLog.Instance._StartDialogues = _GameStartDialogue;
+        
+            DialogueLog.Instance._StartDialogues = _Daydialoguelist[GlobalData._Day - 1];
             _dialogueHUD.SetActive(true);
-        }
+        
        
         
         _DayText.text = "Day " + GlobalData._Day;
@@ -53,16 +52,14 @@ public class DaytimeControl : Singleton<DaytimeControl>
     {
         if (_ActionNumber >= 4)
         { 
-            _ActionNumber = 0;
-           DialogueLog.Instance._StartDialogues = _Daydialoguelist[GlobalData._Day - 1];
-          _dialogueHUD.SetActive(true);
-           AddDay();
-          _DayText.text = "Day " + GlobalData._Day;
-          _timeText.text = _timeList[_ActionNumber];
-          if(PlayerController.Instance._San <= 50)
+            
+            if(GlobalData._SanValue <= 50)
           {
               SceneManager.LoadScene("DeadMain");
           }
+          
+           AddDay();
+           SceneManager.LoadScene(GlobalData._SceneList[GlobalData._Day - 1]);
 
         }
         

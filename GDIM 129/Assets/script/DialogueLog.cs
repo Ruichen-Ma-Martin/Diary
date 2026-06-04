@@ -1,6 +1,7 @@
 using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DialogueLog : Singleton<DialogueLog>
 {
@@ -15,6 +16,8 @@ public class DialogueLog : Singleton<DialogueLog>
     [SerializeField] private GameObject _PlayerOptions;
     [SerializeField] private TMP_Text _playerOption1;
     [SerializeField] private TMP_Text _playerOption2;
+    [SerializeField] private Image _pictureUI;
+    private bool _pictureDisplayed;
 
 
     void Start()
@@ -64,6 +67,14 @@ public class DialogueLog : Singleton<DialogueLog>
                 _playerOption2.text = "";
             }
         }
+        else if(_currentDialogue._picture != null&&_pictureDisplayed==false)
+        {
+            _dialogueText.gameObject.SetActive(false);
+            _pictureUI.gameObject.SetActive(true);
+            _pictureUI.sprite = _currentDialogue._picture;
+            _pictureDisplayed = true;
+            //Display picture logic here
+        }
         else
         {
             DialogueEnd();
@@ -76,10 +87,13 @@ public class DialogueLog : Singleton<DialogueLog>
         {
             HurtScreen.Instance.Flash();
         }
+
+        _pictureDisplayed = false;
         _currentSanValue = _currentDialogue._SanNumber;
         OnDialogueEnd?.Invoke();
         _isDialogueActive = false;
         _dialogueText.text = "";
+        _pictureUI.gameObject.SetActive(false);
         gameObject.SetActive(false);
         
     }

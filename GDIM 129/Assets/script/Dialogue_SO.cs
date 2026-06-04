@@ -8,5 +8,7 @@ public class Dialogue_SO : ScriptableObject
     public Dialogue_SO[] _npcReplies;
     public int _SanNumber;
     public bool _isFlash;
+    public Sprite _picture;
+
 
 }

@@ -16,4 +16,7 @@ MonoBehaviour:
   - You step closer and peer through the keyhole
   - ' Amid the pitch black, an eye suddenly snaps open'
   - Shocked, you stumble backward at once.
+  _playerReplyOptions: []
+  _npcReplies: []
   _SanNumber: -10
+  _isFlash: 1

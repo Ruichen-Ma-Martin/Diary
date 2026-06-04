@@ -9,7 +9,8 @@ public class PlayerController : Singleton<PlayerController> {
     [SerializeField] private float _moveSpeed = 3f;
     public Rigidbody2D rb;
     [SerializeField] private SpriteRenderer _spriteRenderer;
-   
+    [SerializeField] private Sprite _idie;
+    [SerializeField] private Sprite _walk;
     public bool _isPlayerCanMove = true;
     //public int _San;
     [SerializeField] private TMP_Text _SanText;
@@ -46,6 +47,15 @@ public class PlayerController : Singleton<PlayerController> {
         else if (_moveDirection.x > 0)
         {
             _spriteRenderer.flipX = true;
+        }
+
+        if(Mathf.Abs(_moveDirection.x) > 0.01f)
+        {
+            _spriteRenderer.sprite = _walk;
+        }
+        else
+        {
+            _spriteRenderer.sprite = _idie;
         }
     }
 

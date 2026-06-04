@@ -14,19 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue_SO
   _lines:
   - Much cheaper than anything else in the city.
-  - The landlord said the previous tenant had moved out in a hurry.
-  - Most of their belongings were still inside.
-  - I didn't ask any questions.
-  - I needed a place to stay.
-  - Besides...
-  - What could possibly be wrong with an empty apartment?
-  - The apartment was smaller than I expected.
-  - Dust covered most of the furniture, and the air smelled stale, as if no one had
-    lived here for a very long time.
-  - While unpacking my things, I noticed there is a notebook on the desk.
-  - There was no name on it.
-  - 'Just one word scratched across the front. '
-  - Diary. Press [TAB] to read.
   _playerReplyOptions: []
   _npcReplies: []
   _SanNumber: 0
+  _isFlash: 0

@@ -15,4 +15,7 @@ MonoBehaviour:
   _lines:
   - I open the drawer and spot the note
   - "\"Don\u2019t turn off lights at night\" on an old receipt "
+  _playerReplyOptions: []
+  _npcReplies: []
   _SanNumber: -10
+  _isFlash: 1

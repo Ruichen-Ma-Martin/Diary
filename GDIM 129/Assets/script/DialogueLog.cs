@@ -72,11 +72,16 @@ public class DialogueLog : Singleton<DialogueLog>
     }
     void DialogueEnd()
     {
+        if (_currentDialogue._isFlash)
+        {
+            HurtScreen.Instance.Flash();
+        }
         _currentSanValue = _currentDialogue._SanNumber;
         OnDialogueEnd?.Invoke();
         _isDialogueActive = false;
         _dialogueText.text = "";
         gameObject.SetActive(false);
+        
     }
     public void AnswerSelection( int Option)
     {

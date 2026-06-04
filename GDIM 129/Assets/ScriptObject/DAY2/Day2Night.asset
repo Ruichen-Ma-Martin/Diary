@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69456d03988ca4e88921b432c824af2b, type: 3}
+  m_Name: Day2Night
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue_SO
+  _lines:
+  - sleep
+  - question
+  _playerReplyOptions:
+  - yes
+  - no
+  _npcReplies:
+  - {fileID: 11400000, guid: 33c7dc9dc9332c746a4d4bff5e22658f, type: 2}
+  - {fileID: 11400000, guid: 13d64f649463874498b16de9e6df502e, type: 2}
+  _SanNumber: 0
+  _isFlash: 0

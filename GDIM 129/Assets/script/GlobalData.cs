@@ -10,5 +10,6 @@ public static class GlobalData
         "Day2",
         "Day3",
         "Day4",
+        "GameOver"
     };
 }

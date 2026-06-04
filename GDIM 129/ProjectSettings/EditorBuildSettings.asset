@@ -13,10 +13,19 @@ EditorBuildSettings:
     guid: 0e019bcfaa1372943922481560a4e23c
   - enabled: 1
     path: Assets/Scenes/Day2.unity
-    guid: c281cc60889391b48854ef3664c101fa
+    guid: c74bb2c6efec15b4e99cf1a6753f5915
+  - enabled: 1
+    path: Assets/Scenes/Day3.unity
+    guid: 65237b188415ee04bb5d903d1dd96034
+  - enabled: 1
+    path: Assets/Scenes/Day4.unity
+    guid: 85091aa46fde7c443a46ce11314fb80c
   - enabled: 1
     path: Assets/Scenes/DeadMain.unity
     guid: d18c2f93532ef2c4db4584f08613eebf
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 43b45b2b860e56d4081aa719ec34ebd0
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 877e95e3acae51f4ab2a5fb1419310d4, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

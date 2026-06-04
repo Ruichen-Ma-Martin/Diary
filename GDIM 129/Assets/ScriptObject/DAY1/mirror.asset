@@ -22,3 +22,4 @@ MonoBehaviour:
   _playerReplyOptions: []
   _npcReplies: []
   _SanNumber: -25
+  _isFlash: 1

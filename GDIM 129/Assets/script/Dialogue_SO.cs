@@ -7,5 +7,6 @@ public class Dialogue_SO : ScriptableObject
     public string[] _playerReplyOptions;
     public Dialogue_SO[] _npcReplies;
     public int _SanNumber;
+    public bool _isFlash;
 
 }

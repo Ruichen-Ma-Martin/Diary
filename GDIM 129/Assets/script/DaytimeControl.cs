@@ -46,6 +46,10 @@ public class DaytimeControl : Singleton<DaytimeControl>
     private void Update()
     {
         NextDay();
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            NextAction();
+        }
     }
 
     void NextDay()

@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue_SO
   _lines:
   - open
-  - '###'
+  - it
   _playerReplyOptions: []
   _npcReplies: []
   _SanNumber: 10
+  _isFlash: 0

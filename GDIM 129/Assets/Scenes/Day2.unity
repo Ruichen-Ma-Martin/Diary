@@ -341,7 +341,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &57163077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -662,7 +662,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6.3723, y: 3.6411}
+  m_AnchoredPosition: {x: 6.067, y: 3.414}
   m_SizeDelta: {x: 1041.2418, y: 948.3923}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &121163068
@@ -685,7 +685,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 882266666631242441, guid: 65d7481c38986a44489fb6864b2658d5, type: 3}
+  m_Sprite: {fileID: 8918626094199875184, guid: 38dd9c522e64804488297a0ed563ff2b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -734,7 +734,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractiveObject
   _interactiveUI: {fileID: 156714647}
-  _requiredDay: 1
   _ObjectHuD: {fileID: 310329914}
 --- !u!212 &138719098
 SpriteRenderer:
@@ -781,8 +780,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -344592919
+  m_SortingLayer: -1
   m_SortingOrder: -1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 1070273566285135743, guid: 4669f966c4f08014095fa89f742c0247, type: 3}
@@ -3563,7 +3562,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1000
   m_MaskInteraction: 0
   m_Sprite: {fileID: -1133536351229728779, guid: 9f47e982e9c9f4afcbb0f09b32c9a582, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5068,7 +5067,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractiveObject
   _interactiveUI: {fileID: 16566131}
-  _requiredDay: 99
   _ObjectHuD: {fileID: 10082572}
 --- !u!212 &1030889911
 SpriteRenderer:
@@ -5115,9 +5113,9 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingLayerID: -344592919
+  m_SortingLayer: -1
+  m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 8918626094199875184, guid: 38dd9c522e64804488297a0ed563ff2b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -6290,7 +6288,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractiveObject
   _interactiveUI: {fileID: 1896703383}
-  _requiredDay: 1
   _ObjectHuD: {fileID: 750315145}
 --- !u!212 &1251567608
 SpriteRenderer:
@@ -6337,8 +6334,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -344592919
+  m_SortingLayer: -1
   m_SortingOrder: -1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 0}
@@ -6733,7 +6730,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1331295515
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6923,7 +6920,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractiveObject
   _interactiveUI: {fileID: 1126160702}
-  _requiredDay: 1
   _ObjectHuD: {fileID: 322909264}
 --- !u!212 &1408757763
 SpriteRenderer:
@@ -6970,8 +6966,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -344592919
+  m_SortingLayer: -1
   m_SortingOrder: -1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 4759835632878607411, guid: 7edd9549625722a47aefad32a9729a37, type: 3}
@@ -7505,8 +7501,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1594363631
-  m_SortingLayer: -1
-  m_SortingOrder: 0
+  m_SortingLayer: -2
+  m_SortingOrder: -1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 1741127097455094746, guid: a052b1d45d4243b4b8085d08ed7bdf63, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -7673,8 +7669,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -344592919
+  m_SortingLayer: -1
   m_SortingOrder: -1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 882266666631242441, guid: 65d7481c38986a44489fb6864b2658d5, type: 3}
@@ -7700,7 +7696,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractiveObject
   _interactiveUI: {fileID: 2023783463}
-  _requiredDay: 1
   _ObjectHuD: {fileID: 499551549}
 --- !u!1 &1592368626
 GameObject:
@@ -7870,7 +7865,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractiveObject
   _interactiveUI: {fileID: 756984997}
-  _requiredDay: 99
   _ObjectHuD: {fileID: 1832699918}
 --- !u!212 &1592549052
 SpriteRenderer:
@@ -7917,8 +7911,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -344592919
+  m_SortingLayer: -1
   m_SortingOrder: -1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 9160947498648758219, guid: 0ec700367a4b8b940a5b39b14915c3b3, type: 3}
@@ -8026,8 +8020,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1594363631
-  m_SortingLayer: -1
-  m_SortingOrder: 0
+  m_SortingLayer: -2
+  m_SortingOrder: -1
   m_MaskInteraction: 0
   m_Sprite: {fileID: -6057420215722293315, guid: 31eba75555f15074a92a650a7a239450, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -9151,8 +9145,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1594363631
-  m_SortingLayer: -1
-  m_SortingOrder: 0
+  m_SortingLayer: -2
+  m_SortingOrder: -1
   m_MaskInteraction: 0
   m_Sprite: {fileID: -6057420215722293315, guid: 31eba75555f15074a92a650a7a239450, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

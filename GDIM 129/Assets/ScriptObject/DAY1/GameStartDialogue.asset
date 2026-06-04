@@ -27,4 +27,6 @@ MonoBehaviour:
   - There was no name on it.
   - 'Just one word scratched across the front. '
   - Diary. Press [TAB] to read.
+  _playerReplyOptions: []
+  _npcReplies: []
   _SanNumber: 0

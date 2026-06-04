@@ -3,11 +3,9 @@ using UnityEngine;
 public class InteractiveObject : Singleton<InteractiveObject>
 {
     [SerializeField] private GameObject _interactiveUI;
-    [SerializeField] private int _requiredDay;
+    //[SerializeField] private int _requiredDay;
     [SerializeField] private GameObject _ObjectHuD;
-    
-    
-    
+    [SerializeField] private bool _isObjectOpen = false;
     private bool _isHUDOpen = false;
 
     
@@ -15,23 +13,21 @@ public class InteractiveObject : Singleton<InteractiveObject>
 
     void Update()
     {
-        if(_requiredDay == GlobalData._Day)
-        {
+       
+        
             checkinteractiveStart();
-        }
-        else
-            {
-                _interactiveUI.SetActive(false);
-        }
+        
+        
+            
 
     }
 
     void checkinteractiveStart()
     {
-        if (Vector2.Distance(transform.position, PlayerController.Instance.transform.position) < 2f)
+        if (Vector2.Distance(transform.position, PlayerController.Instance.transform.position) < 2f && _isObjectOpen == false)
         {
             _interactiveUI.SetActive(true);
-            if (Input.GetKeyDown(KeyCode.E) && _isHUDOpen == false )
+            if (Input.GetKeyDown(KeyCode.E) && _isHUDOpen == false && DialogueLog.Instance._isDialogueActive == false)
             {
                 OpenInteractiveHUD();
             }
@@ -39,6 +35,7 @@ public class InteractiveObject : Singleton<InteractiveObject>
             {
                 CloseInteractiveHUD();
                 DaytimeControl.Instance.NextAction();
+                _isObjectOpen = true;
             }
             
         }

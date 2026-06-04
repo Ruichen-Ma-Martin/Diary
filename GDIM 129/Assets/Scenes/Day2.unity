@@ -1599,7 +1599,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   _moveSmooth: 1
-  _moveSpeed: 3
+  _moveSpeed: 5
   rb: {fileID: 0}
   _spriteRenderer: {fileID: 694451626}
   _idie: {fileID: 5222106399074115461, guid: c50304564ac5bdc469d7bcebc8d6a985, type: 3}
@@ -4902,7 +4902,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractiveButton
   ButtonID: 3
-  _DialogueHUD: {fileID: 0}
+  _DialogueHUD: {fileID: 57163076}
 --- !u!114 &1032780226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7876,7 +7876,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -5552235038892527940, guid: 82b8493bf0283004299b4ad8e4d25308, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

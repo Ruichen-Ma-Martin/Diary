@@ -34,10 +34,9 @@ public class DaytimeControl : Singleton<DaytimeControl>
     private void Start()
     {
         
-            DialogueLog.Instance._StartDialogues = _Daydialoguelist[GlobalData._Day - 1];
+        DialogueLog.Instance._StartDialogues = _Daydialoguelist[GlobalData._Day - 1];
             _dialogueHUD.SetActive(true);
         
-       
         
         _DayText.text = "Day " + GlobalData._Day;
         _timeText.text = _timeList[_ActionNumber];
@@ -57,10 +56,7 @@ public class DaytimeControl : Singleton<DaytimeControl>
         if (_ActionNumber >= 4)
         { 
             
-            if(GlobalData._SanValue <= 50)
-          {
-              SceneManager.LoadScene("DeadMain");
-          }
+          
           
            AddDay();
            SceneManager.LoadScene(GlobalData._SceneList[GlobalData._Day - 1]);

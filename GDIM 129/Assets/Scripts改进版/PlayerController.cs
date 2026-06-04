@@ -20,6 +20,8 @@ public class PlayerController : Singleton<PlayerController> {
         rb = GetComponent<Rigidbody2D>();
         
         DialogueLog.OnDialogueEnd += UpdateSanText;
+        GlobalData._SanStock = GlobalData._SanValue;
+        //GlobalData._SanValue = GlobalData._SanStock;//kesha
 
     }
 
@@ -39,7 +41,9 @@ public class PlayerController : Singleton<PlayerController> {
         if (!_isPlayerCanMove) return;
         _moveDirection.x = _moveSmooth ? Input.GetAxis("Horizontal") : Input.GetAxisRaw("Horizontal");
 
-            rb.linearVelocityX = _moveDirection.x * _moveSpeed;
+        Vector2 dir = new Vector2(_moveDirection.x, 0).normalized;
+        transform.Translate(dir * _moveSpeed * Time.deltaTime);
+       // rb.linearVelocityX = _moveDirection.x * _moveSpeed;
         if (_moveDirection.x < 0)
         {
             _spriteRenderer.flipX = false;
@@ -58,7 +62,7 @@ public class PlayerController : Singleton<PlayerController> {
             _spriteRenderer.sprite = _idie;
         }
     }
-
+    
     void OpenDiary()
     {
         if (Input.GetKeyDown(KeyCode.Tab))

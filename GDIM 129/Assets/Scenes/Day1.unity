@@ -971,8 +971,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cda72b1d6208784894eee8b41eef3c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  _moveSmooth: 1
-  _moveSpeed: 3
+  _moveSmooth: 0
+  _moveSpeed: 5
   rb: {fileID: 0}
   _spriteRenderer: {fileID: 694451626}
   _idie: {fileID: 5222106399074115461, guid: c50304564ac5bdc469d7bcebc8d6a985, type: 3}
@@ -7280,7 +7280,7 @@ GameObject:
   - component: {fileID: 1801859094}
   m_Layer: 0
   m_Name: AirWall (1)
-  m_TagString: Untagged
+  m_TagString: Airwall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7545,7 +7545,7 @@ GameObject:
   - component: {fileID: 1862284389}
   m_Layer: 0
   m_Name: AirWall
-  m_TagString: Untagged
+  m_TagString: Airwall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

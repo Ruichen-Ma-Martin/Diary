@@ -5,10 +5,15 @@ public class gameovercheck : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     [SerializeField] private GameObject _gameoverUI;
+    [SerializeField] private GameObject _dialogueUI;
+    [SerializeField] private Dialogue_SO _Day4Dialogue;
 
     void Awake()
     {
-        if(GlobalData._Day >= 5 && GlobalData._SanValue <= 20)
+        DialogueLog.Instance._StartDialogues = _Day4Dialogue;
+        _dialogueUI.SetActive(true);
+
+        if (GlobalData._Day >= 5 && GlobalData._SanValue <= 20)
         {
             _gameoverUI.SetActive(true);
             gameObject.SetActive(false);

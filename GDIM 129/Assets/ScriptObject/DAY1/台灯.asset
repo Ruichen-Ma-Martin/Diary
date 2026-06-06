@@ -15,4 +15,8 @@ MonoBehaviour:
   _lines:
   - I lift the lamp base
   - 'and find a slip saying the landlord is lying '
+  _playerReplyOptions: []
+  _npcReplies: []
   _SanNumber: 10
+  _isFlash: 0
+  _picture: {fileID: -5270625294407466694, guid: c8b6e8126b24f6f448d336ccc28b6f4b, type: 3}

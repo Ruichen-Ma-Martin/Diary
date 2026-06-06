@@ -17,4 +17,5 @@ MonoBehaviour:
   _playerReplyOptions: []
   _npcReplies: []
   _SanNumber: 0
-  _isFlash: 0
+  _isFlash: 1
+  _picture: {fileID: 0}

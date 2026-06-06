@@ -20,3 +20,4 @@ MonoBehaviour:
   _npcReplies: []
   _SanNumber: -20
   _isFlash: 1
+  _picture: {fileID: -3945914060020925962, guid: 95954752d85c67840b48b5955fc78822, type: 3}

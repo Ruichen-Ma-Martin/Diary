@@ -2,6 +2,7 @@ using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using static UnityEditor.Rendering.MaterialUpgrader;
 
 public class DialogueLog : Singleton<DialogueLog>
 {
@@ -45,6 +46,7 @@ public class DialogueLog : Singleton<DialogueLog>
 
     void StartDialogue()
     {
+        //_dialogueText.gameObject.SetActive(true);
        _isDialogueActive = true;
         if(_currentLine <_currentDialogue._lines.Length)
         {
@@ -69,11 +71,12 @@ public class DialogueLog : Singleton<DialogueLog>
         }
         else if(_currentDialogue._picture != null&&_pictureDisplayed==false)
         {
-            _dialogueText.gameObject.SetActive(false);
+            //_dialogueText.gameObject.SetActive(false);
+            _dialogueText.text = "";
             _pictureUI.gameObject.SetActive(true);
             _pictureUI.sprite = _currentDialogue._picture;
             _pictureDisplayed = true;
-            //Display picture logic here
+          
         }
         else
         {
@@ -83,17 +86,19 @@ public class DialogueLog : Singleton<DialogueLog>
     }
     void DialogueEnd()
     {
-        if (_currentDialogue._isFlash)
-        {
-            HurtScreen.Instance.Flash();
-        }
-
+        _pictureUI.gameObject.SetActive(false);
         _pictureDisplayed = false;
         _currentSanValue = _currentDialogue._SanNumber;
         OnDialogueEnd?.Invoke();
         _isDialogueActive = false;
         _dialogueText.text = "";
         _pictureUI.gameObject.SetActive(false);
+        if (_currentDialogue._isFlash)
+        {
+            HurtScreen.Instance.Flash();
+        }
+
+       
         gameObject.SetActive(false);
         
     }

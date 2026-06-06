@@ -13,9 +13,13 @@ MonoBehaviour:
   m_Name: "\u628A\u624B2"
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue_SO
   _lines:
-  - Clicking the wardrobe handle in zoomed view pries the door open by a thin crack
-  - 'from which a deathly pale hand suddenly stretches out then yanks back into the
-    closet alongside eerie ambient noises.  '
+  - It was locked to the wardrobe
+  - "I couldn\u2019t budge it open"
+  - Then the wardrobe started shaking
+  - The wardrobe door opened a crack revealing a pale hand coming out of the wardrobe
+  - The wardrobe shut itself
+  - I attributed it to my eyes seeing things
+  - "My heart didn\u2019t want to believe me, though"
   _playerReplyOptions: []
   _npcReplies: []
   _SanNumber: -20

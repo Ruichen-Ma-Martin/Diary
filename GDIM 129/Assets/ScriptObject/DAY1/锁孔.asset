@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: "\u9501\u5B54"
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue_SO
   _lines:
-  - You step closer and peer through the keyhole
-  - ' Amid the pitch black, an eye suddenly snaps open'
-  - Shocked, you stumble backward at once.
+  - I leaned closer to the keyhole
+  - It was dark within the cabinet
+  - Then, an eye appeared
+  - "I didn\u2019t know how long I stared at the eye"
   _playerReplyOptions: []
   _npcReplies: []
   _SanNumber: -10

@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: "\u53F0\u706F"
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue_SO
   _lines:
-  - I lift the lamp base
-  - 'and find a slip saying the landlord is lying '
+  - A note was tucked under the base of the lamp
+  - " \u201CThe landlord is lying.\u201D"
+  - I remembered what he said to me when he showed me the apartment
   _playerReplyOptions: []
   _npcReplies: []
   _SanNumber: 10

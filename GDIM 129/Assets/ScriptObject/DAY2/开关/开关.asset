@@ -13,13 +13,14 @@ MonoBehaviour:
   m_Name: "\u5F00\u5173"
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue_SO
   _lines:
-  - open
-  - question
+  - There's a switch on the wall
+  - I don't remember seeing it yesterday
   _playerReplyOptions:
-  - yes
-  - no
+  - Turn it off
+  - Leave it
   _npcReplies:
   - {fileID: 11400000, guid: 978f9b36d5f8428468322ef89991334e, type: 2}
   - {fileID: 11400000, guid: 5d18dcafb4518664c9a44aeca65c2cf0, type: 2}
   _SanNumber: 0
   _isFlash: 0
+  _picture: {fileID: 0}

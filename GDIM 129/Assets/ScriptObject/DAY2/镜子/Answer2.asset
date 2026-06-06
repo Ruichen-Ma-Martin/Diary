@@ -13,8 +13,11 @@ MonoBehaviour:
   m_Name: Answer2
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue_SO
   _lines:
-  - Fuck off
+  - I said nothing
+  - Later, I feel the world spun
+  - I put my hand on the sink
   _playerReplyOptions: []
   _npcReplies: []
   _SanNumber: -30
   _isFlash: 1
+  _picture: {fileID: 0}

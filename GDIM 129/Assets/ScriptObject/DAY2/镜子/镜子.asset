@@ -13,13 +13,19 @@ MonoBehaviour:
   m_Name: "\u955C\u5B50"
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue_SO
   _lines:
-  - speak with mirror
-  - qustion
+  - I looked up at my reflection
+  - I was in a good mood today
+  - I'm grinning from ear to ear
+  - wait
+  - I wasn't smiling
+  - '"Do you want to live?"'
+  - it said
   _playerReplyOptions:
   - Yes
-  - No
+  - ......
   _npcReplies:
   - {fileID: 11400000, guid: ed086308f4f5dc343a27b98f7bdc3ca6, type: 2}
   - {fileID: 11400000, guid: 20684bdf3c24ef540b11d0f22e507f69, type: 2}
   _SanNumber: 0
   _isFlash: 0
+  _picture: {fileID: 0}

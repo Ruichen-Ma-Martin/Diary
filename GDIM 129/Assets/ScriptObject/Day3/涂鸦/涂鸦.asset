@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69456d03988ca4e88921b432c824af2b, type: 3}
+  m_Name: "\u6D82\u9E26"
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue_SO
+  _lines:
+  - "There\u2019s something on the living room wall"
+  - "I didn\u2019t notice it yesterday"
+  _playerReplyOptions:
+  - Wipe it off
+  - Look closer
+  _npcReplies:
+  - {fileID: 11400000, guid: b35625cc21cf0fd439bbaead8a881edc, type: 2}
+  - {fileID: 11400000, guid: 243282a324785fc40836d29afc96636e, type: 2}
+  _SanNumber: 0
+  _isFlash: 0
+  _picture: {fileID: 0}

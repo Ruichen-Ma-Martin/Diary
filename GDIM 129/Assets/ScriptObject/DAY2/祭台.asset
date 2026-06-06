@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: "\u796D\u53F0"
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue_SO
   _lines:
-  - open
-  - it
+  - There are traces of use in the burner
+  - But, I never touched it yesterday
   _playerReplyOptions: []
   _npcReplies: []
   _SanNumber: 10
   _isFlash: 0
+  _picture: {fileID: 0}

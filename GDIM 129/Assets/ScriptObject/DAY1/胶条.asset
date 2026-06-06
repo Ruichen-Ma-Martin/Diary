@@ -13,6 +13,15 @@ MonoBehaviour:
   m_Name: "\u80F6\u6761"
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue_SO
   _lines:
-  - Tapping the leftover adhesive tape on the wardrobe peels the tape away
-  - "uncovering handwritten words \"It\u2019s breathing inside\" beneath it. "
+  - A strip of tape stuck on the wardrobe door
+  - Peel it off The door shook as I yanked the tape off the door
+  - The wardrobe door opened by itself revealing something heavy in the wardrobe
+    taking a breath
+  - I pressed the tape back onto the door
+  - My hands shaking from fright
+  - "Leave it I\u2019ll leave it for now"
+  _playerReplyOptions: []
+  _npcReplies: []
   _SanNumber: 5
+  _isFlash: 0
+  _picture: {fileID: 0}

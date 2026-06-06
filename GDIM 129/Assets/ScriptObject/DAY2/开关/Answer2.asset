@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: Answer2
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue_SO
   _lines:
-  - life
+  - I should leave it alone
+  - let light turn on
   _playerReplyOptions: []
   _npcReplies: []
   _SanNumber: 0
   _isFlash: 0
+  _picture: {fileID: 0}

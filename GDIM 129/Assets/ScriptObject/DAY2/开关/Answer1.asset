@@ -13,8 +13,12 @@ MonoBehaviour:
   m_Name: Answer1
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue_SO
   _lines:
-  - dead
+  - It went dark
+  - Something grabbed me
+  - More than one hand
+  - I couldn't move
   _playerReplyOptions: []
   _npcReplies: []
   _SanNumber: -100000
   _isFlash: 1
+  _picture: {fileID: 0}

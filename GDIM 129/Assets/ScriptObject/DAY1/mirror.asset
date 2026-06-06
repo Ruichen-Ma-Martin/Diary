@@ -13,13 +13,14 @@ MonoBehaviour:
   m_Name: mirror
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue_SO
   _lines:
-  - When you click the mirror surface, the reflection responds half a beat slower
-    than your movements
-  - When you stay still, the reflection slowly forms an eerie smile that doesn't
-    match your expression
-  - 'the overhead light flickers irregularly, and faint female whispers mix into
-    the background. '
+  - "I hadn\u2019t slept well the past couple of nights"
+  - My eyes showed it when I looked in the mirror
+  - I thought something was off about me
+  - I waved my hand in front of me
+  - My reflection copied my movement
+  - A little too late for my liking
   _playerReplyOptions: []
   _npcReplies: []
   _SanNumber: -25
   _isFlash: 1
+  _picture: {fileID: 0}

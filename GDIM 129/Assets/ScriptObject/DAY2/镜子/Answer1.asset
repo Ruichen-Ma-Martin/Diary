@@ -13,7 +13,12 @@ MonoBehaviour:
   m_Name: Answer1
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue_SO
   _lines:
-  - ok
+  - I remembered what the diary said
+  - I reply its question
+  - '"Keep the lights on at night."'
+  - it said
   _playerReplyOptions: []
   _npcReplies: []
   _SanNumber: 10
+  _isFlash: 0
+  _picture: {fileID: 0}

@@ -13,8 +13,11 @@ MonoBehaviour:
   m_Name: "\u53F0\u706F"
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue_SO
   _lines:
-  - open
+  - There's another note under the lamp
+  - '"They''re afraid of the light." '
+  - That's not what it said yesterday
   _playerReplyOptions: []
   _npcReplies: []
   _SanNumber: 10
   _isFlash: 0
+  _picture: {fileID: 0}

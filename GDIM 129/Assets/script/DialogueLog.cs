@@ -23,6 +23,7 @@ public class DialogueLog : Singleton<DialogueLog>
 
     void Start()
     {
+        _isDialogueActive = true;
         _currentDialogue = _StartDialogues;
         _currentLine = 0;
     }
@@ -47,7 +48,7 @@ public class DialogueLog : Singleton<DialogueLog>
     void StartDialogue()
     {
         //_dialogueText.gameObject.SetActive(true);
-       _isDialogueActive = true;
+      
         if(_currentLine <_currentDialogue._lines.Length)
         {
             _dialogueText.text = _currentDialogue._lines[_currentLine];

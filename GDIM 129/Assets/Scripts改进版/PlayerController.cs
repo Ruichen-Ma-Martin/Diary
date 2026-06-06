@@ -26,6 +26,7 @@ public class PlayerController : Singleton<PlayerController> {
     }
 
     private void Update() {
+        testuse();
         MoveControll();
         OpenDiary();
         if (GlobalData._SanValue <= 0)
@@ -74,5 +75,13 @@ public class PlayerController : Singleton<PlayerController> {
     {
         GlobalData._SanValue += DialogueLog.Instance._currentSanValue;
        
+    }
+
+    void testuse()
+    {
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            GlobalData._SanValue -= 80;
+        }
     }
 }

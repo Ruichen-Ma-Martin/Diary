@@ -1918,7 +1918,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1542600487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2420,6 +2420,7 @@ MonoBehaviour:
   _PlayerOptions: {fileID: 0}
   _playerOption1: {fileID: 0}
   _playerOption2: {fileID: 0}
+  _pictureUI: {fileID: 0}
 --- !u!114 &1946087651
 MonoBehaviour:
   m_ObjectHideFlags: 0

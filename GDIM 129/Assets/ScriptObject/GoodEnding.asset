@@ -13,7 +13,20 @@ MonoBehaviour:
   m_Name: GoodEnding
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue_SO
   _lines:
-  - After leaving the apartment, I finally understood what had happened.
+  - 'After leaving the apartment, I finally understood what had happened. Ten years
+    ago, the landlord''s daughter took her own life in that room. Her spirit remained
+    behind, attached to the mirror she used every day. Over time, she began searching
+    for someone to replace her. '
+  - 'The diary was written by a previous tenant who discovered the truth. The warnings
+    scattered throughout the apartment were all attempts to stop the next victim
+    from making the same mistakes. '
+  - 'The mirror could occasionally tell the truth, which made it even more dangerous.
+    By gaining trust little by little, it convinced people to ignore the real protection
+    hidden inside the apartment. The incense on the altar and the doll were used
+    to keep the spirit sealed. As long as they remained in place, she could not fully
+    take over another person. '
+  - 'In the end, I survived by following the clues left behind by those who came
+    before me. '
   _playerReplyOptions: []
   _npcReplies: []
   _SanNumber: 0

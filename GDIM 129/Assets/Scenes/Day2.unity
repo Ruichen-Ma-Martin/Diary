@@ -4903,7 +4903,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10e4997a66ef2304c990a2a7d2a17a99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractiveButton
-  ButtonID: 3
+  ButtonID: 2
   _DialogueHUD: {fileID: 57163076}
 --- !u!114 &1032780226
 MonoBehaviour:

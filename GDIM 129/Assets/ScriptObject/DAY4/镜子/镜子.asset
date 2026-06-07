@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69456d03988ca4e88921b432c824af2b, type: 3}
+  m_Name: "\u955C\u5B50"
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue_SO
+  _lines:
+  - Mirror I can't keep talking to this thing
+  _playerReplyOptions:
+  - Smash it
+  - Cover it with cloth
+  _npcReplies:
+  - {fileID: 11400000, guid: 88a3288140f616e4690a461d4b3a7d84, type: 2}
+  - {fileID: 11400000, guid: a62d8de0faf8b914cb56ee0a951f3736, type: 2}
+  _SanNumber: 0
+  _isFlash: 0
+  _picture: {fileID: 0}

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69456d03988ca4e88921b432c824af2b, type: 3}
+  m_Name: "\u628A\u624B"
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue_SO
+  _lines:
+  - I grabbed the handle and pulled
+  - The door swung open.
+  - Two pale hands shot out and grabbed me
+  - I couldn't stop myself from going in
+  - "Help\u2014"
+  _playerReplyOptions: []
+  _npcReplies: []
+  _SanNumber: -10000
+  _isFlash: 1
+  _picture: {fileID: 0}

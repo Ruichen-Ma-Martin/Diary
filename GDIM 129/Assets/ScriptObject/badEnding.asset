@@ -14,6 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue_SO
   _lines:
   - I never made it out of the apartment.
+  - 'Each strange thing I saw. '
+  - 'Each warning I ignored. '
+  - 'Each conversation with the mirror. '
+  - They all took something from me.
+  - 'By the end, there was almost nothing left. '
+  - 'The diary tried to warn me. '
+  - 'I was simply too late to understand. '
+  - 'That night, she finally found a replacement. '
+  - 'The mirror was smiling. '
+  - 'And a new diary had begun. '
   _playerReplyOptions: []
   _npcReplies: []
   _SanNumber: 0

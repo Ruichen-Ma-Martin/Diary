@@ -13,8 +13,11 @@ MonoBehaviour:
   m_Name: yes
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue_SO
   _lines:
-  - life
+  - I decided to do as it said and kept the lights on
+  - trangely, even though the room was brightly lit, I drifted off to sleep in no
+    time.
   _playerReplyOptions: []
   _npcReplies: []
   _SanNumber: 0
   _isFlash: 0
+  _picture: {fileID: 0}

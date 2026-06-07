@@ -13,7 +13,14 @@ MonoBehaviour:
   m_Name: GameStartDialogue
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue_SO
   _lines:
-  - Much cheaper than anything else in the city.
+  - The rent was too cheap.
+  - ' Much cheaper than anything else in the city.'
+  - The landlord said the previous tenant had moved out in a hurry
+  - Most of their belongings were still inside.
+  - I didn't ask any questions.
+  - I needed a place to stay.
+  - Besides...
+  - What could possibly be wrong with an empty apartment?
   _playerReplyOptions: []
   _npcReplies: []
   _SanNumber: 0

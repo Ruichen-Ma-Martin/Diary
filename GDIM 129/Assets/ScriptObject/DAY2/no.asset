@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: no
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue_SO
   _lines:
-  - dead
+  - This mirror is far too eerie
+  - "I shouldn\u2019t listen to it. I turned off the lights and tried to sleep"
   _playerReplyOptions: []
   _npcReplies: []
   _SanNumber: -100000
   _isFlash: 1
+  _picture: {fileID: 0}

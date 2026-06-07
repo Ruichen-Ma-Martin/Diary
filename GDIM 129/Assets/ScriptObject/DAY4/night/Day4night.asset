@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69456d03988ca4e88921b432c824af2b, type: 3}
+  m_Name: Day4night
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue_SO
+  _lines:
+  - The place was terrifying
+  - I resolved to escape first thing tomorrow
+  - Trembling with fear, I sat on the edge of the bed, too scared to close my eyes
+  - "hen my gaze fell on the cloth doll I\u2019d found in the drawer"
+  - it had belonged to her
+  _playerReplyOptions:
+  - Hold the doll
+  - Place the doll on the altar
+  _npcReplies:
+  - {fileID: 11400000, guid: ded9a50e27ee4424ebc6179fa18c3dca, type: 2}
+  - {fileID: 11400000, guid: 22b27ae53179d7c40bdebfaf385bf326, type: 2}
+  _SanNumber: 0
+  _isFlash: 0
+  _picture: {fileID: 0}

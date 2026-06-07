@@ -13,13 +13,15 @@ MonoBehaviour:
   m_Name: Day2Night
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue_SO
   _lines:
-  - sleep
-  - question
+  - Night fell once more
+  - I thought about what the mirror had told me
+  - Should I follow its words?
   _playerReplyOptions:
-  - yes
-  - no
+  - Obey
+  - Refuse
   _npcReplies:
   - {fileID: 11400000, guid: 33c7dc9dc9332c746a4d4bff5e22658f, type: 2}
   - {fileID: 11400000, guid: 13d64f649463874498b16de9e6df502e, type: 2}
   _SanNumber: 0
   _isFlash: 0
+  _picture: {fileID: 0}
